@@ -1,0 +1,2 @@
+Fuente oficial: https://archive.ics.uci.edu/dataset/222/bank+marketing
+El notebook descarga automaticamente bank-full.csv; no se incluye un CSV ficticio.
