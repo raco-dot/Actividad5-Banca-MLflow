@@ -1,1 +1,73 @@
 Se genera bank_marketing_limpio.csv al ejecutar fuentes/train.py.
+
+DATOS LIMPIOS - ACTIVIDAD 5
+Predicción de contratación de depósitos bancarios
+
+1. DESCRIPCIÓN
+
+Esta carpeta está destinada a almacenar el conjunto de datos procesado utilizado para el entrenamiento y evaluación de los modelos de aprendizaje automático del proyecto.
+
+El dataset procede de Bank Marketing, disponible en el repositorio público UCI Machine Learning Repository. Contiene información histórica de campañas comerciales de una entidad bancaria portuguesa.
+
+Fuente oficial:
+https://archive.ics.uci.edu/dataset/222/bank+marketing
+
+2. ARCHIVO GENERADO
+
+Nombre: bank_marketing_limpio.csv
+
+El archivo se genera mediante el proceso de preparación de datos implementado en los scripts del proyecto, particularmente fuentes/datos_prep.py y fuentes/train.py.
+
+3. PROCESO DE LIMPIEZA
+
+El conjunto de datos original contiene 45.211 registros.
+
+Durante la preparación se eliminaron 16 registros duplicados exactos, obteniéndose un conjunto limpio de 45.195 observaciones.
+
+El procedimiento incluye:
+
+- Identificación y eliminación de duplicados exactos.
+- Revisión de valores ausentes y consistencia de las variables.
+- Comprobación de tipos de datos.
+- Exclusión de la variable duration, correspondiente a la duración de la última llamada, para evitar utilizar información que no estaría disponible antes del contacto comercial.
+- Preparación de las variables predictoras y de la variable objetivo.
+
+Las transformaciones estadísticas y la codificación necesarias para cada modelo se realizan mediante los pipelines de scikit-learn, evitando la fuga de información durante la validación cruzada.
+
+4. VARIABLE OBJETIVO
+
+La variable objetivo indica si el cliente contrató un depósito bancario.
+
+Distribución después de la limpieza:
+
+- No contrataciones: 39.906 registros.
+- Contrataciones: 5.289 registros.
+- Prevalencia positiva: 11,70 %.
+
+La distribución evidencia un desequilibrio entre las clases, por lo que la evaluación utiliza accuracy, precision, recall, F1-score y ROC-AUC.
+
+5. REPRODUCIBILIDAD
+
+Los datos pueden regenerarse ejecutando el procedimiento de descarga, preparación y entrenamiento documentado en el repositorio.
+
+Archivos principales:
+
+- fuentes/datos_prep.py
+- fuentes/train.py
+- fuentes/entrena.ipynb
+
+El código y las decisiones metodológicas se documentan en README.md y CHANGELOG.md.
+
+6. VERSIONAMIENTO
+
+Los scripts de preparación y la documentación se mantienen bajo control de versiones mediante GitHub.
+
+Cualquier modificación en las reglas de limpieza, selección de variables o estructura del dataset debe documentarse en CHANGELOG.md.
+
+7. CONSIDERACIONES
+
+El dataset es público y se utiliza exclusivamente con fines académicos.
+
+Los resultados corresponden a información histórica y no deben interpretarse como predicciones actuales sobre clientes de BBVA ni de otra entidad financiera.
+
+El uso de estos datos permite estudiar buenas prácticas de preparación, trazabilidad y reproducibilidad en proyectos de Machine Learning.
