@@ -1,0 +1,1 @@
+Se genera bank_marketing_limpio.csv al ejecutar fuentes/train.py.
