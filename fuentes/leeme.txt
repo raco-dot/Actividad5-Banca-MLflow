@@ -1,0 +1,5 @@
+En esta carpeta subi tres programas
+Programa principal que es el que ejecuté en colab y controla la ejecución de los otros dos
+Preparación de datos (datos_prep)
+Entrenamiento y evaluación (train), que es el que realmente entrena a los modelos 
+y va ejecutando una y otra vez con parámetros diferentes
