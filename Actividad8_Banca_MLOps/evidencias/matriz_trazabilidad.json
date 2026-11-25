@@ -1,0 +1,42 @@
+[
+  {
+    "id": "INC-001",
+    "escenario": "Predicciones corrompidas sinteticamente",
+    "resultado": "F1: 0.379 -> 0.1022 -> 0.379",
+    "accion": "Desactivar corrupcion simulada",
+    "evidencia": "incidentes.json",
+    "limite": "No rollback real"
+  },
+  {
+    "id": "INC-002",
+    "escenario": "Latencia inyectada sinteticamente",
+    "resultado": "15 -> 700 -> 15 ms",
+    "accion": "Desactivar inyeccion",
+    "evidencia": "incidentes.json",
+    "limite": "No latencia HTTP real"
+  },
+  {
+    "id": "INC-003",
+    "escenario": "HTTP 503 en endpoint de simulacion",
+    "resultado": "HTTP 200 -> 503 -> 200",
+    "accion": "POST /simulacion/desactivar",
+    "evidencia": "incidente_http_503.json",
+    "limite": "No rollback de infraestructura"
+  },
+  {
+    "id": "INC-003-auto",
+    "escenario": "HTTP 503 controlado",
+    "resultado": "Deteccion 503, verificacion 200",
+    "accion": "Runbook ejecutado por script",
+    "evidencia": "runbook_automatico_503.json",
+    "limite": "Se ejecuta al invocar el script"
+  },
+  {
+    "id": "API V2",
+    "escenario": "100 solicitudes locales",
+    "resultado": "95 HTTP 200, 5 HTTP 422; 0 HTTP 5xx",
+    "accion": "Sin accion correctiva",
+    "evidencia": "prueba_api_v2_100.json",
+    "limite": "4xx excluidos del SLI de disponibilidad definido"
+  }
+]
