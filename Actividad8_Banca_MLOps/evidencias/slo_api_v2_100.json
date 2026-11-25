@@ -1,0 +1,18 @@
+{
+  "fuente": "api_v2_100_solicitudes_colab",
+  "total": 100,
+  "fallos_disponibilidad": 0,
+  "solicitudes_lentas": 0,
+  "disponibilidad": 1.0,
+  "proporcion_rapidas": 1.0,
+  "presupuesto_disponibilidad": 1.0000000000000009,
+  "presupuesto_latencia": 5.000000000000004,
+  "consumo_presupuesto_disponibilidad": 0.0,
+  "consumo_presupuesto_latencia": 0.0,
+  "codigos_http": {
+    "200": 95,
+    "422": 5
+  },
+  "slo_disponibilidad_cumplido": true,
+  "slo_latencia_cumplido": true
+}
