@@ -1,0 +1,12 @@
+{
+  "total": 30,
+  "errores": 0,
+  "solicitudes_lentas": 1,
+  "disponibilidad": 1.0,
+  "proporcion_rapidas": 0.9666666666666667,
+  "latencia_p95_ms": 27.071999999999974,
+  "latencia_p99_ms": 1164.7187200000012,
+  "consumo_presupuesto_disponibilidad": 0.0,
+  "consumo_presupuesto_latencia": 0.6666666666666666,
+  "fuente": "solicitudes_http_reales_colab"
+}
