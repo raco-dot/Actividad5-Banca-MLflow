@@ -1,0 +1,43 @@
+{
+  "tipo": "validacion_final_runbook",
+  "entorno": "google_colab",
+  "timestamp": "2026-11-16T22:13:48.097385+00:00",
+  "escenario_con_fallo": {
+    "alerta": {
+      "prioridad": "P1",
+      "tipo": "indisponibilidad",
+      "accion": "desactivar_fallo_controlado"
+    },
+    "eventos": [
+      {
+        "etapa": "deteccion",
+        "http": 503,
+        "timestamp": "2026-11-16T22:13:48.082310+00:00"
+      },
+      {
+        "etapa": "runbook",
+        "http": 200,
+        "timestamp": "2026-11-16T22:13:48.087501+00:00"
+      },
+      {
+        "etapa": "verificacion",
+        "http": 200,
+        "timestamp": "2026-11-16T22:13:48.091008+00:00"
+      }
+    ],
+    "recuperado": true
+  },
+  "escenario_sin_fallo": {
+    "alerta": null,
+    "eventos": [
+      {
+        "etapa": "deteccion",
+        "http": 200,
+        "timestamp": "2026-11-16T22:13:48.096216+00:00"
+      }
+    ],
+    "recuperado": true
+  },
+  "pruebas_superadas": 2,
+  "rollback_productivo": false
+}
