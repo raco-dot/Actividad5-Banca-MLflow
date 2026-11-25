@@ -1,0 +1,14 @@
+{
+  "fuente": "trafico_http_real_colab",
+  "solicitudes": 30,
+  "disponibilidad": 1.0,
+  "proporcion_rapidas": 0.9666666666666667,
+  "alertas": [
+    {
+      "metrica": "presupuesto_latencia",
+      "prioridad": "P3",
+      "tipo": "advertencia_preventiva",
+      "consumo": 0.6666666666666666
+    }
+  ]
+}
