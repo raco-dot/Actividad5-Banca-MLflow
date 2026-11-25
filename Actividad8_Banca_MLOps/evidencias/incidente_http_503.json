@@ -1,0 +1,32 @@
+{
+  "incidente": "INC-003",
+  "tipo": "fallo_http_503_controlado",
+  "antes": {
+    "http": 200,
+    "respuesta": {
+      "status": "ok"
+    },
+    "timestamp": "2026-11-16T21:05:56.856864+00:00"
+  },
+  "durante": {
+    "http": 503,
+    "respuesta": {
+      "detail": "Fallo academico simulado"
+    },
+    "timestamp": "2026-11-16T21:05:56.877747+00:00"
+  },
+  "runbook": {
+    "accion": "desactivar_fallo_controlado",
+    "resultado": {
+      "fallo_activo": false
+    }
+  },
+  "despues": {
+    "http": 200,
+    "respuesta": {
+      "status": "ok"
+    },
+    "timestamp": "2026-11-16T21:05:56.914894+00:00"
+  },
+  "recuperado": true
+}
