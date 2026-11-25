@@ -1,0 +1,9 @@
+test_degradado (test_slo.TestSLO.test_degradado) ... ok
+test_inconsistente (test_slo.TestSLO.test_inconsistente) ... ok
+test_sano (test_slo.TestSLO.test_sano) ... ok
+test_sin_medicion (test_slo.TestSLO.test_sin_medicion) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
