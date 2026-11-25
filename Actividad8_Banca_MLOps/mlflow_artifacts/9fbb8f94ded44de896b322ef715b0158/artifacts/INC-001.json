@@ -1,0 +1,24 @@
+{
+  "incidente": "INC-001",
+  "tipo": "corrupcion_sintetica_predicciones",
+  "antes": {
+    "f1": 0.379,
+    "recall": 0.6314,
+    "precision": 0.2708,
+    "accuracy": 0.7578
+  },
+  "durante": {
+    "f1": 0.1022,
+    "recall": 0.3686,
+    "precision": 0.0593,
+    "accuracy": 0.2422
+  },
+  "despues": {
+    "f1": 0.379,
+    "recall": 0.6314,
+    "precision": 0.2708,
+    "accuracy": 0.7578
+  },
+  "alerta": true,
+  "accion": "desactivar_corrupcion_sintetica; no es rollback real de modelo"
+}
