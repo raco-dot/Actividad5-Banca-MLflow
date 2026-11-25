@@ -1,0 +1,11 @@
+{
+  "alerta": null,
+  "eventos": [
+    {
+      "etapa": "deteccion",
+      "http": 200,
+      "timestamp": "2026-11-16T21:10:58.277324+00:00"
+    }
+  ],
+  "recuperado": true
+}
