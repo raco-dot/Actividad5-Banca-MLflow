@@ -1,0 +1,202 @@
+[
+  {
+    "archivo": "README.md",
+    "tamano_bytes": 1962
+  },
+  {
+    "archivo": "codigo/alertas.json",
+    "tamano_bytes": 307
+  },
+  {
+    "archivo": "codigo/api.py",
+    "tamano_bytes": 1435
+  },
+  {
+    "archivo": "codigo/api_incidentes.py",
+    "tamano_bytes": 906
+  },
+  {
+    "archivo": "codigo/api_original.py",
+    "tamano_bytes": 1435
+  },
+  {
+    "archivo": "codigo/api_v2.py",
+    "tamano_bytes": 2992
+  },
+  {
+    "archivo": "codigo/dashboard.py",
+    "tamano_bytes": 1298
+  },
+  {
+    "archivo": "codigo/dashboard_v2.py",
+    "tamano_bytes": 2972
+  },
+  {
+    "archivo": "codigo/modelo_reconstruido.joblib",
+    "tamano_bytes": 6874
+  },
+  {
+    "archivo": "codigo/monitor.py",
+    "tamano_bytes": 4648
+  },
+  {
+    "archivo": "codigo/motor_alertas.py",
+    "tamano_bytes": 893
+  },
+  {
+    "archivo": "codigo/runbook_automatico.py",
+    "tamano_bytes": 1406
+  },
+  {
+    "archivo": "codigo/slo_config.json",
+    "tamano_bytes": 230
+  },
+  {
+    "archivo": "codigo/slo_monitor.py",
+    "tamano_bytes": 1757
+  },
+  {
+    "archivo": "codigo/supervision_integrada.py",
+    "tamano_bytes": 975
+  },
+  {
+    "archivo": "datos/bank_marketing_limpio.csv",
+    "tamano_bytes": 3483558
+  },
+  {
+    "archivo": "evidencias/alertas_api_real.json",
+    "tamano_bytes": 305
+  },
+  {
+    "archivo": "evidencias/api_requests.jsonl",
+    "tamano_bytes": 2699
+  },
+  {
+    "archivo": "evidencias/api_v2_requests.jsonl",
+    "tamano_bytes": 24084
+  },
+  {
+    "archivo": "evidencias/baseline_reconstruido.json",
+    "tamano_bytes": 82
+  },
+  {
+    "archivo": "evidencias/dashboard_incidentes.png",
+    "tamano_bytes": 83759
+  },
+  {
+    "archivo": "evidencias/dashboard_incidentes_interactivo.html",
+    "tamano_bytes": 4568781
+  },
+  {
+    "archivo": "evidencias/dashboard_interactivo.html",
+    "tamano_bytes": 4569810
+  },
+  {
+    "archivo": "evidencias/dashboard_operativo.png",
+    "tamano_bytes": 187931
+  },
+  {
+    "archivo": "evidencias/drift.json",
+    "tamano_bytes": 98
+  },
+  {
+    "archivo": "evidencias/evaluacion_slo.json",
+    "tamano_bytes": 549
+  },
+  {
+    "archivo": "evidencias/eventos.jsonl",
+    "tamano_bytes": 3633
+  },
+  {
+    "archivo": "evidencias/incidente_http_503.json",
+    "tamano_bytes": 635
+  },
+  {
+    "archivo": "evidencias/incidentes.json",
+    "tamano_bytes": 862
+  },
+  {
+    "archivo": "evidencias/observabilidad_api_v2.json",
+    "tamano_bytes": 305
+  },
+  {
+    "archivo": "evidencias/prueba_api_v2_100.json",
+    "tamano_bytes": 10088
+  },
+  {
+    "archivo": "evidencias/pruebas_alertas.json",
+    "tamano_bytes": 398
+  },
+  {
+    "archivo": "evidencias/pruebas_api_http.json",
+    "tamano_bytes": 6109
+  },
+  {
+    "archivo": "evidencias/runbook_automatico_503.json",
+    "tamano_bytes": 504
+  },
+  {
+    "archivo": "evidencias/runbook_sin_incidente.json",
+    "tamano_bytes": 175
+  },
+  {
+    "archivo": "evidencias/slo_api_real.json",
+    "tamano_bytes": 355
+  },
+  {
+    "archivo": "evidencias/slo_api_v2_100.json",
+    "tamano_bytes": 479
+  },
+  {
+    "archivo": "evidencias/supervision_integrada.json",
+    "tamano_bytes": 2153
+  },
+  {
+    "archivo": "mlflow.db",
+    "tamano_bytes": 1032192
+  },
+  {
+    "archivo": "mlflow_artifacts/8144d108d2ba4d8b96678aa9538c9e48/artifacts/drift.json",
+    "tamano_bytes": 98
+  },
+  {
+    "archivo": "mlflow_artifacts/9fbb8f94ded44de896b322ef715b0158/artifacts/INC-001.json",
+    "tamano_bytes": 491
+  },
+  {
+    "archivo": "mlflow_artifacts/a388fd87b44440c59fca960e383035f7/artifacts/baseline_reconstruido.json",
+    "tamano_bytes": 82
+  },
+  {
+    "archivo": "mlflow_artifacts/da2bd6256475480495d0117a69b1b741/artifacts/incidente_http_503.json",
+    "tamano_bytes": 635
+  },
+  {
+    "archivo": "mlflow_artifacts/dffb808343cb43b4a11df729fc868c9b/artifacts/INC-002.json",
+    "tamano_bytes": 287
+  },
+  {
+    "archivo": "mlflow_artifacts/fcde29a421e0435ebb794dd50ddfbaab/artifacts/alertas_api_real.json",
+    "tamano_bytes": 305
+  },
+  {
+    "archivo": "mlflow_artifacts/fcde29a421e0435ebb794dd50ddfbaab/artifacts/pruebas_api_http.json",
+    "tamano_bytes": 6109
+  },
+  {
+    "archivo": "mlflow_artifacts/fcde29a421e0435ebb794dd50ddfbaab/artifacts/slo_api_real.json",
+    "tamano_bytes": 355
+  },
+  {
+    "archivo": "mlflow_artifacts/ffd8cda8594e47b697180b6bfff520a7/artifacts/runbook_automatico_503.json",
+    "tamano_bytes": 504
+  },
+  {
+    "archivo": "mlflow_artifacts/ffd8cda8594e47b697180b6bfff520a7/artifacts/runbook_sin_incidente.json",
+    "tamano_bytes": 175
+  },
+  {
+    "archivo": "requirements.txt",
+    "tamano_bytes": 146
+  }
+]
