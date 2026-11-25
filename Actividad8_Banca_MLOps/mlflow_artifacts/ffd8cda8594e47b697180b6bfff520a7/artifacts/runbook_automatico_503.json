@@ -1,0 +1,25 @@
+{
+  "alerta": {
+    "prioridad": "P1",
+    "tipo": "indisponibilidad",
+    "accion": "desactivar_fallo_controlado"
+  },
+  "eventos": [
+    {
+      "etapa": "deteccion",
+      "http": 503,
+      "timestamp": "2026-11-16T21:09:41.159338+00:00"
+    },
+    {
+      "etapa": "runbook",
+      "http": 200,
+      "timestamp": "2026-11-16T21:09:41.164589+00:00"
+    },
+    {
+      "etapa": "verificacion",
+      "http": 200,
+      "timestamp": "2026-11-16T21:09:41.170763+00:00"
+    }
+  ],
+  "recuperado": true
+}
