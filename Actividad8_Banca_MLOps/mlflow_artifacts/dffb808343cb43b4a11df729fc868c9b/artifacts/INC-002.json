@@ -1,0 +1,15 @@
+{
+  "incidente": "INC-002",
+  "tipo": "latencia_inyectada",
+  "antes": {
+    "latency_ms": 15.0
+  },
+  "durante": {
+    "latency_ms": 700.0
+  },
+  "despues": {
+    "latency_ms": 15.0
+  },
+  "alerta": true,
+  "accion": "desactivar_inyeccion_sintetica; no es rollback de infraestructura"
+}
