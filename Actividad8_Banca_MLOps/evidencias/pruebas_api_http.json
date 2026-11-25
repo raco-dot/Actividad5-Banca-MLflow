@@ -1,0 +1,272 @@
+[
+  {
+    "solicitud": 1,
+    "status_http": 200,
+    "latency_ms": 1627.829,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.200419,
+    "trace_id": "2b41cb2e-3564-4bb2-a167-815e21c05fd6"
+  },
+  {
+    "solicitud": 2,
+    "status_http": 200,
+    "latency_ms": 20.297,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.230801,
+    "trace_id": "bc08801f-01e4-4039-a857-53d376137838"
+  },
+  {
+    "solicitud": 3,
+    "status_http": 200,
+    "latency_ms": 20.689,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.123309,
+    "trace_id": "26ca893a-27be-4f3b-b103-887481d07587"
+  },
+  {
+    "solicitud": 4,
+    "status_http": 200,
+    "latency_ms": 22.397,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.181274,
+    "trace_id": "7828f725-8498-4e6c-a749-a371469fa078"
+  },
+  {
+    "solicitud": 5,
+    "status_http": 200,
+    "latency_ms": 20.482,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.300959,
+    "trace_id": "26f425b7-8040-4be7-bcb0-de26a29e1d68"
+  },
+  {
+    "solicitud": 6,
+    "status_http": 200,
+    "latency_ms": 18.714,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.197713,
+    "trace_id": "831112bc-be3d-4116-8458-1cdbc32b8242"
+  },
+  {
+    "solicitud": 7,
+    "status_http": 200,
+    "latency_ms": 18.999,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.205262,
+    "trace_id": "b1270ce1-6df5-4eb5-9f9f-14bcaabe3e81"
+  },
+  {
+    "solicitud": 8,
+    "status_http": 200,
+    "latency_ms": 19.674,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.205885,
+    "trace_id": "de8bcdfb-a30a-4cf9-bcca-331e19c00026"
+  },
+  {
+    "solicitud": 9,
+    "status_http": 200,
+    "latency_ms": 20.863,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.234118,
+    "trace_id": "2f975061-dd8a-4fd2-b3dc-5261ba5accbe"
+  },
+  {
+    "solicitud": 10,
+    "status_http": 200,
+    "latency_ms": 21.911,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.23437,
+    "trace_id": "d6313906-11b7-4d31-979b-5f078cd77847"
+  },
+  {
+    "solicitud": 11,
+    "status_http": 200,
+    "latency_ms": 18.986,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.235622,
+    "trace_id": "e887d9d3-492a-4705-b329-2a9a2b1027e0"
+  },
+  {
+    "solicitud": 12,
+    "status_http": 200,
+    "latency_ms": 30.897,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.256775,
+    "trace_id": "bf28c7ce-ccf3-4e26-b564-ed62c98210f5"
+  },
+  {
+    "solicitud": 13,
+    "status_http": 200,
+    "latency_ms": 20.945,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.169663,
+    "trace_id": "311cfdcf-4fd8-48ab-a4f8-cb77d60ef4eb"
+  },
+  {
+    "solicitud": 14,
+    "status_http": 200,
+    "latency_ms": 19.357,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.173471,
+    "trace_id": "d262b7d9-542f-4b68-84aa-ef2bed7587cf"
+  },
+  {
+    "solicitud": 15,
+    "status_http": 200,
+    "latency_ms": 20.295,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.167166,
+    "trace_id": "099d82ac-1303-45e7-8d30-afc941433223"
+  },
+  {
+    "solicitud": 16,
+    "status_http": 200,
+    "latency_ms": 17.763,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.237169,
+    "trace_id": "111ccab8-384b-4e65-bceb-5717949a91ea"
+  },
+  {
+    "solicitud": 17,
+    "status_http": 200,
+    "latency_ms": 18.112,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.255148,
+    "trace_id": "defc38c1-db21-400d-bbd5-95c0674c7376"
+  },
+  {
+    "solicitud": 18,
+    "status_http": 200,
+    "latency_ms": 20.984,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.150521,
+    "trace_id": "b286a03c-cb03-4c0f-be50-70ea4ddea0ec"
+  },
+  {
+    "solicitud": 19,
+    "status_http": 200,
+    "latency_ms": 19.724,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.233079,
+    "trace_id": "123d0b81-0b39-45ec-99bc-a9876b6dc761"
+  },
+  {
+    "solicitud": 20,
+    "status_http": 200,
+    "latency_ms": 17.219,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.172954,
+    "trace_id": "2b6bde25-c636-4612-8247-8e6941bc9bc5"
+  },
+  {
+    "solicitud": 21,
+    "status_http": 200,
+    "latency_ms": 20.335,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.133516,
+    "trace_id": "bf13dc55-c304-4389-a7bc-af1c45da5dd3"
+  },
+  {
+    "solicitud": 22,
+    "status_http": 200,
+    "latency_ms": 17.481,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.19411,
+    "trace_id": "7f81d0c6-1104-4ab7-bdc0-d704f1b9868b"
+  },
+  {
+    "solicitud": 23,
+    "status_http": 200,
+    "latency_ms": 17.864,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.160193,
+    "trace_id": "438e3942-c256-44a9-b140-7dbfa2adae6f"
+  },
+  {
+    "solicitud": 24,
+    "status_http": 200,
+    "latency_ms": 17.553,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.1754,
+    "trace_id": "567bc258-5060-488b-9771-e7d5a57a3a5a"
+  },
+  {
+    "solicitud": 25,
+    "status_http": 200,
+    "latency_ms": 17.112,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.183313,
+    "trace_id": "cab86c78-0b9c-4f80-b183-ff2e7da54992"
+  },
+  {
+    "solicitud": 26,
+    "status_http": 200,
+    "latency_ms": 16.959,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.185088,
+    "trace_id": "513f43f6-404b-4690-b532-5f7e28a4b5db"
+  },
+  {
+    "solicitud": 27,
+    "status_http": 200,
+    "latency_ms": 20.223,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.260877,
+    "trace_id": "ed5608fe-b52c-4d40-96d1-a4cc20f39012"
+  },
+  {
+    "solicitud": 28,
+    "status_http": 200,
+    "latency_ms": 16.925,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.119783,
+    "trace_id": "fcb57802-5463-40f4-9110-fdbfd309d61b"
+  },
+  {
+    "solicitud": 29,
+    "status_http": 200,
+    "latency_ms": 17.9,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.212252,
+    "trace_id": "3557ba39-8edd-427f-b152-58e869a9abf3"
+  },
+  {
+    "solicitud": 30,
+    "status_http": 200,
+    "latency_ms": 18.659,
+    "exito": true,
+    "prediction": 0,
+    "probability": 0.179393,
+    "trace_id": "5fc2d68f-4d7f-4808-8666-4572cb0685b8"
+  }
+]
