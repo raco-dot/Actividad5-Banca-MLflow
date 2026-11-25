@@ -1,0 +1,23 @@
+[
+  {
+    "metrica": "disponibilidad",
+    "valor": 0.97,
+    "umbral": 0.99,
+    "prioridad": "P1",
+    "estado": "EMITIDA",
+    "timestamp": 1000
+  },
+  {
+    "metrica": "disponibilidad",
+    "estado": "SUPRIMIDA",
+    "motivo": "cooldown"
+  },
+  {
+    "metrica": "disponibilidad",
+    "valor": 0.95,
+    "umbral": 0.99,
+    "prioridad": "P1",
+    "estado": "EMITIDA",
+    "timestamp": 1400
+  }
+]
