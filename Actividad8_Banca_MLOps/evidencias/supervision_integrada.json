@@ -1,0 +1,97 @@
+{
+  "primera": {
+    "total_solicitudes": 100,
+    "disponibilidad": 0.97,
+    "proporcion_rapidas": 0.9,
+    "f1": 0.1022,
+    "errores": 3,
+    "solicitudes_lentas": 10,
+    "presupuesto_disponibilidad": 1.0000000000000009,
+    "presupuesto_latencia": 5.000000000000004,
+    "consumo_disponibilidad": 2.9999999999999973,
+    "consumo_latencia": 1.9999999999999982,
+    "alertas": [
+      {
+        "metrica": "disponibilidad",
+        "prioridad": "P1"
+      },
+      {
+        "metrica": "latencia",
+        "prioridad": "P2"
+      },
+      {
+        "metrica": "f1",
+        "prioridad": "P1"
+      }
+    ],
+    "alertas_procesadas": [
+      {
+        "metrica": "disponibilidad",
+        "valor": 0.97,
+        "umbral": 0.99,
+        "prioridad": "P1",
+        "estado": "EMITIDA",
+        "timestamp": 1000
+      },
+      {
+        "metrica": "latencia",
+        "valor": 0.9,
+        "umbral": 0.95,
+        "prioridad": "P2",
+        "estado": "EMITIDA",
+        "timestamp": 1000
+      },
+      {
+        "metrica": "f1",
+        "valor": 0.1022,
+        "umbral": 0.3,
+        "prioridad": "P1",
+        "estado": "EMITIDA",
+        "timestamp": 1000
+      }
+    ]
+  },
+  "segunda": {
+    "total_solicitudes": 100,
+    "disponibilidad": 0.97,
+    "proporcion_rapidas": 0.9,
+    "f1": 0.1022,
+    "errores": 3,
+    "solicitudes_lentas": 10,
+    "presupuesto_disponibilidad": 1.0000000000000009,
+    "presupuesto_latencia": 5.000000000000004,
+    "consumo_disponibilidad": 2.9999999999999973,
+    "consumo_latencia": 1.9999999999999982,
+    "alertas": [
+      {
+        "metrica": "disponibilidad",
+        "prioridad": "P1"
+      },
+      {
+        "metrica": "latencia",
+        "prioridad": "P2"
+      },
+      {
+        "metrica": "f1",
+        "prioridad": "P1"
+      }
+    ],
+    "alertas_procesadas": [
+      {
+        "metrica": "disponibilidad",
+        "estado": "SUPRIMIDA",
+        "motivo": "cooldown"
+      },
+      {
+        "metrica": "latencia",
+        "estado": "SUPRIMIDA",
+        "motivo": "cooldown"
+      },
+      {
+        "metrica": "f1",
+        "estado": "SUPRIMIDA",
+        "motivo": "cooldown"
+      }
+    ]
+  }
+}
