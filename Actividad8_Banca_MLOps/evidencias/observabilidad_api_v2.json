@@ -1,0 +1,15 @@
+{
+  "total": 2,
+  "exitosas": 1,
+  "errores_cliente_4xx": 1,
+  "errores_servidor_5xx": 0,
+  "disponibilidad": 1.0,
+  "latencia_media_ms": 13.0705,
+  "latencia_p95_ms": 23.654049999999998,
+  "solicitudes_lentas": 0,
+  "codigos_http": {
+    "200": 1,
+    "422": 1
+  },
+  "fuente": "api_v2_http_real_colab"
+}
