@@ -1,4 +1,8 @@
-CHANGELOG — Actividad 5: Predicción de contratación de depósitos bancarios
+# CHANGELOG | Proyecto de Machine Learning y MLOps Bancario
+
+## Actividades 5, 6 y 8
+
+## Actividad 5 — Predicción de contratación de depósitos bancarios
 
 Historial de cambios y evolución del proyecto
 
@@ -564,3 +568,368 @@ El desarrollo y las validaciones técnicas se completaron en un entorno académi
 El proyecto utiliza exclusivamente datos públicos de UCI Machine Learning Repository con fines académicos.
 
 Tecmilenio — 2026.
+
+---
+
+# Actividad 6 — Evaluación y validación de modelos de Machine Learning
+
+## Continuidad del proyecto
+
+La Actividad 6 amplía el proyecto académico de predicción de contratación de depósitos bancarios desarrollado en la Actividad 5, incorporando técnicas de evaluación, validación estadística, optimización de umbrales de decisión y análisis del impacto potencial en el negocio.
+
+El ejercicio complementa las actividades anteriores y fortalece la comprensión del ciclo de vida de los modelos de Machine Learning.
+
+Se conservan los datos, modelos, configuraciones y resultados originales para facilitar la comparación y mantener la trazabilidad experimental.
+
+## Versión 3.0 — Recuperación y reproducibilidad
+
+**Estado:** Datos y modelos originales recuperados y verificados.
+
+### Actividades realizadas
+
+- Recuperación del dataset limpio de la Actividad 5.
+- Recuperación de los modelos originales de regresión logística y Random Forest.
+- Reconstrucción de la partición estratificada de entrenamiento y prueba.
+- Conservación de la semilla aleatoria 42.
+- Verificación de las versiones de las bibliotecas utilizadas.
+- Reproducción de las métricas originales.
+- Organización de carpetas de resultados, gráficas y documentación.
+
+### Resultados
+
+| Indicador | Resultado |
+|---|---:|
+| Registros del dataset limpio | 45,195 |
+| Registros de entrenamiento | 36,156 |
+| Registros de prueba | 9,039 |
+| Contrataciones en el conjunto de prueba | 1,058 |
+| Métricas originales reproducidas | 10 de 10 |
+
+### Decisiones
+
+Se conservaron los modelos originales para analizar el efecto de la evaluación y optimización de umbrales sin modificar inicialmente sus hiperparámetros.
+
+Se reconoce que el conjunto de prueba había sido utilizado previamente en la Actividad 5, lo que limita su independencia respecto al proceso histórico de desarrollo.
+
+## Versión 3.1 — Objetivos SMART y modelos de referencia
+
+**Estado:** Criterios de evaluación definidos y baselines evaluados.
+
+### Actividades realizadas
+
+- Definición del problema de clasificación binaria.
+- Establecimiento de objetivos SMART.
+- Selección del F1-score como métrica principal.
+- Evaluación del baseline de clase mayoritaria.
+- Evaluación del baseline de selección aleatoria.
+- Evaluación de la estrategia de contactar a todos los clientes.
+- Comparación de métricas predictivas y comerciales.
+
+### Objetivos SMART
+
+| Métrica | Objetivo mínimo |
+|---|---:|
+| F1-score | 40% |
+| Recall | 60% |
+| Precision | 30% |
+
+### Decisiones
+
+Se seleccionó el F1-score como criterio principal debido al desbalance de clases y a la necesidad de equilibrar la identificación de oportunidades comerciales con la eficiencia de los contactos.
+
+La exactitud no se consideró suficiente como criterio único de selección.
+
+## Versión 3.2 — Validación cruzada y optimización de umbrales
+
+**Estado:** Validación cruzada y selección de umbrales completadas.
+
+### Actividades realizadas
+
+- Implementación de validación cruzada estratificada de cinco particiones.
+- Ejecución de diez ajustes de modelos durante la validación cruzada.
+- Generación de predicciones Out-of-Fold.
+- Comparación del desempeño de entrenamiento y validación.
+- Identificación de posibles indicios de sobreajuste.
+- Evaluación de 99 umbrales por algoritmo.
+- Selección de umbrales mediante los criterios SMART y F1-score.
+
+### Resultados
+
+| Indicador | Resultado |
+|---|---:|
+| Particiones de validación cruzada | 5 |
+| Ajustes de modelos | 10 |
+| Registros con predicciones OOF | 36,156 |
+| Escenarios de umbral evaluados | 198 |
+| Umbral seleccionado para Random Forest | 0.14 |
+| Umbral seleccionado para regresión logística | 0.62 |
+
+### Decisiones
+
+La selección de umbrales se realizó mediante predicciones Out-of-Fold del conjunto de entrenamiento, evitando utilizar directamente el conjunto de prueba para su optimización.
+
+El ajuste del umbral modifica la regla de clasificación, pero no los hiperparámetros ni las puntuaciones predictivas del modelo.
+
+## Versión 3.3 — Evaluación comparativa y selección del modelo
+
+**Estado:** Evaluación histórica completada y modelo candidato seleccionado.
+
+### Actividades realizadas
+
+- Construcción de matrices de confusión.
+- Cálculo de accuracy, precision, recall y F1-score.
+- Evaluación de especificidad.
+- Generación de curvas ROC.
+- Cálculo del área bajo la curva ROC.
+- Generación de curvas Precision-Recall.
+- Comparación de los cuatro escenarios de clasificación.
+- Evaluación del cumplimiento de los objetivos SMART.
+
+### Resultados
+
+| Métrica | RF original | RF ajustado | RL original | RL ajustada |
+|---|---:|---:|---:|---:|
+| Umbral | 0.50 | 0.14 | 0.50 | 0.62 |
+| Accuracy | 89.39% | 83.76% | 75.78% | 86.30% |
+| Precision | 65.23% | 38.00% | 27.08% | 42.24% |
+| Recall | 20.04% | 61.34% | 63.14% | 46.31% |
+| F1-score | 30.66% | 46.93% | 37.90% | 44.18% |
+| ROC-AUC | 80.33% | 80.33% | 77.35% | 77.35% |
+
+### Matriz de confusión del modelo candidato
+
+| Indicador | Resultado |
+|---|---:|
+| Verdaderos positivos | 649 |
+| Verdaderos negativos | 6,922 |
+| Falsos positivos | 1,059 |
+| Falsos negativos | 409 |
+
+### Decisiones
+
+Se seleccionó Random Forest con un umbral de decisión de 0.14 como nuevo modelo candidato.
+
+Este escenario cumple puntualmente los tres objetivos SMART y obtiene una mejora de 9.03 puntos porcentuales en F1-score respecto a la regresión logística original.
+
+La selección no constituye una aprobación para producción.
+
+## Versión 3.4 — Significancia estadística e incertidumbre
+
+**Estado:** Comparaciones estadísticas completadas.
+
+### Actividades realizadas
+
+- Ejecución de 2,000 remuestreos Bootstrap.
+- Cálculo de intervalos de confianza del 95%.
+- Comparación de modelos mediante Bootstrap pareado.
+- Aplicación de la prueba de McNemar.
+- Corrección de Holm para comparaciones múltiples.
+- Evaluación de la incertidumbre asociada al cumplimiento de los objetivos SMART.
+
+### Intervalos de confianza del modelo candidato
+
+| Métrica | Resultado | IC 95% |
+|---|---:|---:|
+| F1-score | 46.93% | 44.67% - 49.15% |
+| Precision | 38.00% | 35.78% - 40.28% |
+| Recall | 61.34% | 58.46% - 64.14% |
+
+### Comparaciones estadísticas de F1-score
+
+| Comparación | Mejora | IC 95% |
+|---|---:|---:|
+| RF ajustado frente a RF original | 16.27 pp | 13.14 - 19.54 pp |
+| RF ajustado frente a RL original | 9.03 pp | 7.57 - 10.57 pp |
+| RF ajustado frente a RL ajustada | 2.74 pp | 1.01 - 4.52 pp |
+
+### Decisiones
+
+Los resultados proporcionan evidencia estadística favorable a Random Forest ajustado en términos de F1-score.
+
+Sin embargo, el intervalo de confianza del recall incluye valores inferiores al objetivo establecido del 60%.
+
+Se recomienda realizar una validación adicional sobre datos independientes antes de considerar una implementación real.
+
+## Versión 3.5 — Simulación A/B e impacto económico
+
+**Estado:** Evaluación comercial retrospectiva y análisis económico completados.
+
+### Actividades realizadas
+
+- Diseño de una simulación retrospectiva A/B.
+- Asignación aleatoria de registros a dos grupos.
+- Comparación de selección aleatoria y priorización mediante Random Forest.
+- Establecimiento de una capacidad equivalente de 850 contactos por estrategia.
+- Aplicación de pruebas estadísticas de comparación de proporciones.
+- Ejecución de 1,000 simulaciones con diferentes semillas aleatorias.
+- Evaluación económica mediante supuestos académicos.
+- Análisis de sensibilidad con 49 escenarios económicos.
+- Cálculo del punto de equilibrio económico.
+
+### Resultados de la simulación A/B
+
+| Indicador | Grupo A: Aleatorio | Grupo B: Random Forest |
+|---|---:|---:|
+| Contactos seleccionados | 850 | 850 |
+| Contrataciones históricas identificadas | 87 | 314 |
+| Conversión histórica | 10.24% | 36.94% |
+
+### Indicadores comerciales y económicos
+
+| Indicador | Resultado |
+|---|---:|
+| Contrataciones históricas adicionales identificadas | 227 |
+| Lift de la simulación principal | 3.61 veces |
+| Lift promedio de 1,000 simulaciones | 3.28 veces |
+| Reducción potencial de contactos frente a RL original | 30.77% |
+| Ventaja económica simulada frente a RL original | $1,890 MXN |
+| Ventaja económica simulada A/B | $68,100 MXN |
+| Escenarios económicos evaluados | 49 |
+
+### Decisiones y limitaciones
+
+La priorización mediante Random Forest presenta resultados favorables en el ejercicio retrospectivo.
+
+Las simulaciones no constituyen campañas comerciales reales ni demuestran un efecto causal sobre las contrataciones futuras.
+
+Los resultados económicos corresponden a supuestos académicos y no representan información financiera real de una institución bancaria.
+
+La conveniencia económica del modelo depende del costo de contacto, el margen por contratación y las restricciones de capacidad comercial.
+
+## Versión 3.6 — MLflow, trazabilidad y tablero visual
+
+**Estado:** Registro experimental y evidencias visuales completados.
+
+### Actividades realizadas
+
+- Creación del experimento independiente de MLflow para la Actividad 6.
+- Registro retrospectivo de métricas, parámetros y configuraciones.
+- Conservación de evidencias de validación cruzada.
+- Registro de resultados de optimización de umbrales.
+- Incorporación de pruebas estadísticas y simulaciones A/B.
+- Registro del análisis económico.
+- Almacenamiento del modelo candidato.
+- Verificación de integridad mediante SHA-256.
+- Recuperación del modelo y reproducción de sus predicciones.
+- Construcción de un dashboard interactivo mediante Plotly.
+- Generación de un tablero visual en PDF.
+
+### Resultados
+
+| Indicador | Resultado |
+|---|---:|
+| Ejecuciones registradas en MLflow | 16 |
+| Ejecuciones finalizadas correctamente | 16 |
+| Artefactos asociados | 87 |
+| Gráficas estáticas generadas | 24 |
+| Componentes interactivos del dashboard | 7 |
+| Páginas del tablero visual PDF | 8 |
+| Integridad del modelo | Verificada |
+| Reproducción de predicciones | Verificada |
+
+### Decisiones
+
+Se conservaron los registros experimentales mediante MLflow para fortalecer la trazabilidad y reproducibilidad del proyecto.
+
+El modelo y su umbral de decisión se documentaron por separado.
+
+El tablero visual PDF se utiliza como alternativa a Trello, conforme a las indicaciones proporcionadas durante la clase 7.
+
+## Versión 3.7 — Publicación e integración en GitHub
+
+**Fecha:** 28 de noviembre de 2026.
+
+**Estado:** Experimentación completada y evidencias publicadas. Reporte técnico pendiente de incorporación.
+
+### Actividades realizadas
+
+- Conservación de los componentes originales de las actividades 5 y 8.
+- Creación de la carpeta `Actividad6_Banca_Evaluacion`.
+- Publicación del README de la Actividad 6.
+- Publicación del CHANGELOG específico.
+- Incorporación de requirements.txt.
+- Publicación del notebook ejecutable.
+- Publicación del PDF con los resultados de ejecución.
+- Publicación del tablero visual PDF.
+- Verificación de la visualización del notebook y su evidencia documental.
+- Actualización del README general del repositorio.
+- Integración del historial de cambios de las tres actividades.
+
+### Archivos publicados
+
+- [README de la Actividad 6](./Actividad6_Banca_Evaluacion/README.md)
+- [CHANGELOG de la Actividad 6](./Actividad6_Banca_Evaluacion/CHANGELOG.md)
+- [Notebook ejecutable](./Actividad6_Banca_Evaluacion/evalua%20%2810%29.ipynb)
+- [Resultados de ejecución del notebook](./Actividad6_Banca_Evaluacion/Resultados%20de%20Notebook%20Evalua.pdf)
+- [Dashboard de resultados](./Actividad6_Banca_Evaluacion/Dashboard_Actividad6.pdf)
+- [Dependencias del proyecto](./Actividad6_Banca_Evaluacion/requirements.txt)
+
+### Alcance de publicación
+
+Se priorizó la publicación de los entregables académicos y las evidencias necesarias para consultar los resultados.
+
+Los modelos serializados, archivos HTML, respaldos intermedios y bases de datos experimentales de la Actividad 6 se conservan como evidencias complementarias fuera de esta carpeta.
+
+La reproducción integral requiere recuperar los datos, modelos y respaldos originales de la Actividad 5 y adaptar las rutas al entorno de ejecución.
+
+### Componentes pendientes
+
+- Incorporación del reporte técnico final.
+- Verificación integral de los enlaces del repositorio.
+- Consolidación del ZIP definitivo de entrega.
+
+---
+
+## Consideraciones finales de MLOps y deuda técnica de la Actividad 6
+
+Se identificaron las siguientes oportunidades de evolución:
+
+- Realizar una validación externa con datos independientes.
+- Investigar y reducir los indicios de sobreajuste de Random Forest.
+- Fortalecer la estabilidad del recall.
+- Evaluar la calibración de las puntuaciones predictivas.
+- Incorporar mecanismos de explicabilidad del modelo.
+- Evaluar equidad y posibles sesgos.
+- Diseñar una prueba A/B prospectiva bajo condiciones controladas.
+- Incorporar los costos completos de implementación y operación.
+- Evaluar la integración del nuevo candidato con los mecanismos de monitorización desarrollados en la Actividad 8.
+- Mejorar la portabilidad de los registros de MLflow.
+- Automatizar las pruebas de evaluación y validación.
+
+## Estado consolidado de las actividades 5, 6 y 8
+
+| Actividad | Alcance | Estado |
+|---|---|---|
+| Actividad 5 | Desarrollo, entrenamiento y optimización | Completada |
+| Actividad 6 | Evaluación y validación estadística | Experimentación completada; reporte técnico pendiente |
+| Actividad 8 | Monitorización y observabilidad MLOps | Validación técnica completada; publicación parcial |
+
+### Evolución del modelo
+
+La regresión logística fue seleccionada como modelo de referencia en la Actividad 5 y utilizada en los ejercicios de monitorización de la Actividad 8.
+
+La evaluación realizada en la Actividad 6 permitió seleccionar Random Forest con umbral de 0.14 como nuevo candidato para validación adicional.
+
+Esta decisión no implica que Random Forest haya sido incorporado al servicio de inferencia o al esquema de monitorización de la Actividad 8.
+
+Su eventual incorporación requeriría validaciones y adaptaciones posteriores.
+
+### Acceso a las actividades
+
+- [Actividad 5 — Desarrollo y entrenamiento](./README.md)
+- [Actividad 6 — Evaluación y validación](./Actividad6_Banca_Evaluacion/README.md)
+- [Actividad 8 — Monitorización y observabilidad](./Actividad8_Banca_MLOps/README.md)
+
+### Repositorio general
+
+https://github.com/raco-dot/Actividad5-Banca-MLflow
+
+---
+
+El proyecto utiliza exclusivamente datos públicos de UCI Machine Learning Repository con fines académicos.
+
+Los modelos, simulaciones comerciales y mecanismos de monitorización desarrollados no constituyen una implementación productiva de una institución financiera.
+
+**Tecmilenio — 2026**
+
+**Gestión de Proyectos de Inteligencia Artificial**
